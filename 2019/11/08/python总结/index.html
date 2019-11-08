@@ -5,14 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>python总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="Python–1字符串与字节python 3 中只有一种能保存文本信息的数据类型——str，它是不可变序列，保存的是Unicode code point。 python 2中用str表示字节字符串。这种类型在python 3中用bytes对象来处理。 bytes以及可变的bytearray与str不同，只能用字节值作为序列值。即0&amp;lt;=x&amp;lt;=255。 将字符串对象编码为字节序列的方法有两">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;python%E6%80%BB%E7%BB%93&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Python–1字符串与字节python 3 中只有一种能保存文本信息的数据类型——str，它是不可变序列，保存的是Unicode code point。 python 2中用str表示字节字符串。这种类型在python 3中用bytes对象来处理。 bytes以及可变的bytearray与str不同，只能用字节值作为序列值。即0&amp;lt;=x&amp;lt;=255。 将字符串对象编码为字节序列的方法有两">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;python%E6%80%BB%E7%BB%93&#x2F;11&#x2F;08&#x2F;python%E6%80%BB%E7%BB%93&#x2F;python1.jpg">
+<meta property="og:updated_time" content="2019-11-08T15:39:54.089Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;python%E6%80%BB%E7%BB%93&#x2F;11&#x2F;08&#x2F;python%E6%80%BB%E7%BB%93&#x2F;python1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-python总结" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-python总结" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/08/python%E6%80%BB%E7%BB%93/" class="article-date">
   <time datetime="2019-11-08T15:37:12.000Z" itemprop="datePublished">2019-11-08</time>
@@ -74,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/08/python%E6%80%BB%E7%BB%93/">python总结</a>
+    <h1 class="article-title" itemprop="name">
+      python总结
     </h1>
   
 
@@ -208,161 +211,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-python基础" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/08/python%E5%9F%BA%E7%A1%80/" class="article-date">
-  <time datetime="2019-11-08T15:13:41.000Z" itemprop="datePublished">2019-11-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/08/python%E5%9F%BA%E7%A1%80/">python基础</a>
-    </h1>
+    <a href="/2019/11/08/python%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">python基础</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Python–1"><a href="#Python–1" class="headerlink" title="Python–1"></a>Python–1</h1><h2 id="字符串与字节"><a href="#字符串与字节" class="headerlink" title="字符串与字节"></a>字符串与字节</h2><p>python 3 中只有一种能保存文本信息的数据类型——str，它是不可变序列，保存的是Unicode code point。</p>
-<p>python 2中用str表示字节字符串。这种类型在python 3中用bytes对象来处理。</p>
-<p>bytes以及可变的bytearray与str不同，只能用字节值作为序列值。即0&lt;=x&lt;=255。</p>
-<p>将字符串对象编码为字节序列的方法有两种：</p>
-<p>a. 利用str.encode(encoding, errors)方法，利用registered codec对字符串进行编码。</p>
-<p>b. 利用bytes(source, encoding, errors)构造函数，创造一个新的字节序列。</p>
-<p>类似的反向转换：</p>
-<p>bytes.decode(encoding, errors)&amp;str(source, encoding, errors)</p>
-<p>因为python字符串与字节序列是不可变的，故每次合并字符串(“+”)都需要创建新的字符串实例，效率低下。</p>
-<p>替代 “”.join(substrs)</p>
-<p>性能提升视实际情况而定，一般而言对于大型列表来说采用join方法性能提升显著。</p>
-<h2 id="集合类型"><a href="#集合类型" class="headerlink" title="集合类型"></a>集合类型</h2><h3 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple:"></a>Tuple:</h3><p>Tuple是不可变的（immutable），因此也是可哈希的（hashable）。</p>
-<h3 id="List"><a href="#List" class="headerlink" title="List:"></a>List:</h3><p>List在CPython中实现为长度可变的数组，并不是“链表”。在需要真正使用链表的地方可以使用collections中的deque，它是栈和队列的一般化。</p>
-<p>列表推导(list comprehension)要比用循环更快速。</p>
-<p>enumerate（）的使用，同时返回index和item。</p>
-<p>zip（）列表合并，对两个等大小的可迭代对象同时进行均匀遍历。对其返回值再次使用zip会恢复原状。</p>
-<p>序列解包(sequence unpacking)，等号两侧对应赋值，*解包，嵌套解包（tuple），详见python cookbook。</p>
-<h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary:"></a>Dictionary:</h3><p>字典推导的使用：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">squares = &#123;number: numbers**<span class="number">2</span> <span class="keyword">for</span> number <span class="keyword">in</span> range(<span class="number">100</span>)&#125;</span><br></pre></td></tr></table></figure>
-
-<p>python 3中，keys(), values(), items()中返回的是视图对象（可以动态改变，与获取时间无关）。</p>
-<p>另外，keys()和values()调用后的值是完全对应的，实时动态调整。</p>
-<p>如果一个对象在整个生命周期都有不变的散列值，而且这个对象可以与其它对象进行比较，那么这个对象就是可哈希的。python中所有不可变的内置类型都是可以哈希的。可变类型（list, dic, set等）是不可哈希的，因此不能做为字典的键。CPython使用开放定址法(open addressing)来解决散列冲突问题。</p>
-<p>如果一个字典曾经有很多元素，后又大大减少，那么遍历这个字典可能要花费相当长时间（guess:标记删除）。因此，某些情况下，最好创建一个新的字典对象。</p>
-<p>字典中的key的顺序是无序的，与散列方法和添加顺序无关。解决方法可以采用collections中的OrderedDict()，用法类似。</p>
-<h3 id="Set"><a href="#Set" class="headerlink" title="Set:"></a>Set:</h3><p>元素唯一性，测试元素是否在集合中效率高。其内部实现与dic类似，实现为带有空值的字典，上古时期由dic实现，后废弃。</p>
-<p>set(): 一种可变的，无序的，有限的集合，其元素是唯一的，不可变的（可哈希）的对象。</p>
-<p>frozenset(): 一种不可变的，可哈希的，无序的结果，其元素是唯一的，不可变的（可哈希）的对象。可用作dic,set的键。</p>
-<p>创建方法：</p>
-<ol>
-<li>接受可迭代对象set([1, 2, 3])</li>
-<li>集合推导{elem for elem in range(3)}</li>
-<li>集合字面值{1， 2， 3}，空集合无字面值，{}为空dic字面值。</li>
-</ol>
-<h3 id="collection-model"><a href="#collection-model" class="headerlink" title="collection model:"></a>collection model:</h3><p>nametuple, deque, ChainMap, Counter, OrderedDict, defaultdict, etc…</p>
-<h3 id="iterator"><a href="#iterator" class="headerlink" title="iterator:"></a>iterator:</h3><p>迭代器是一个实现了迭代器协议的容器对象，基于以下两个方法：</p>
-<p>_<em>next_</em></p>
-<p>_<em>iter_</em> </p>
-<p>迭代器是个底层概念，可以不用，为生成器提供基础。</p>
-<h3 id="generator"><a href="#generator" class="headerlink" title="generator:"></a>generator:</h3><p>基于yield语句，生成器可以暂停函数并返回一个中间结果。该函数会保存上下文，稍后恢复。</p>
-<p>常见使用场景数据流生成（机器学习数据生成）</p>
-<p>最好编写多个处理序列值的简单可迭代函数，将生成器链接起来使用，而不要编写一个复杂函数同时计算出整个集合的结果。保持代码简单而不是保持数据简单。</p>
-<p>send向yield传值。</p>
-<h3 id="decorator"><a href="#decorator" class="headerlink" title="decorator:"></a>decorator:</h3><p>使函数包装与方法包装（一个函数接受函数并返回其增强版本），变得更加容易阅读和理解。</p>
-<p>任何可调用对象（任何实现了__call__方法的对象都是可调用的）都可以用做装饰器。</p>
-<p>装饰器语法只是语法糖而已，同显式装饰器效果相同。</p>
-<p>最初使用场景是在方法定义的开头能够将其定义为类方法或静态方法：</p>
-<h4 id="staticmethod与-classmethod的区别："><a href="#staticmethod与-classmethod的区别：" class="headerlink" title="@staticmethod与@classmethod的区别："></a>@staticmethod与@classmethod的区别：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">m1</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        print(<span class="string">"self"</span>, self)</span><br><span class="line">    </span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">m2</span><span class="params">(cls, n)</span>:</span></span><br><span class="line">        print(<span class="string">"cls"</span>, cls)</span><br><span class="line">    </span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">m3</span><span class="params">(n)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    </span><br><span class="line">a = A()</span><br><span class="line">a.m1(<span class="number">1</span>)</span><br><span class="line">A.m2(<span class="number">1</span>)</span><br><span class="line">A.m3(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<p>m1是实例方法，第一个参数必须是self(约定)。</p>
-<p>m2是类方法，第一个参数必须是cls(约定)。</p>
-<p>m3是静态方法，参数可有可无，看需要。</p>
-<p>执行过程：</p>
-<ul>
-<li>第一步：代码从第一行开始执行 class 命令，此时会创建一个类 A 对象（没错，类也是对象，一切皆对象嘛）同时初始化类里面的属性和方法，记住，此刻实例对象还没创建出来。</li>
-<li>第二、三步：接着执行 a=A()，系统自动调用类的构造器，构造出实例对象 a</li>
-<li>第四步：接着调用 a.m1(1) ，m1 是实例方法，内部会自动把实例对象传递给 self 参数进行绑定，也就是说， self 和 a 指向的都是同一个实例对象。</li>
-<li>第五步：调用A.m2(1)时，python内部隐式地把类对象传递给 cls 参数，cls 和 A 都指向类对象。</li>
-</ul>
-<p><img src="./images/python1.jpg" alt="img"><br>对于实例方法m1（类对象需要绑定实例对象，否则报参数错误）</p>
-<p>A.m1(a, 1) 等价于 a.m1(1)</p>
-<p>对于类方法m2，不管是 A.m2 还是 a.m2，都是已经自动绑定了类对象A的方法，对于后者，因为python可以通过实例对象a找到它所属的类是A，找到A之后自动绑定到 cls。</p>
-<p>A.m2(1) 等价于 a.m2(1)</p>
-<p>对于静态方法m3，跟普通函数没区别，与类和实例都没有绑定关系。</p>
-<p>A.m3(1) 等价于 a.m3(1)  </p>
-<ol>
-<li><h4 id="作为一个函数"><a href="#作为一个函数" class="headerlink" title="作为一个函数"></a>作为一个函数</h4></li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mydecorator</span><span class="params">(function)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapped</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        <span class="comment">#do someting, before call the function</span></span><br><span class="line">        result = function(*args, **kwargs)</span><br><span class="line">        <span class="comment">#do something, after call the function</span></span><br><span class="line">        <span class="comment">#return the result</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    <span class="comment">#返回wrapped作为装饰函数</span></span><br><span class="line">    <span class="keyword">return</span> wrapped</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><h4 id="作为一个类"><a href="#作为一个类" class="headerlink" title="作为一个类"></a>作为一个类</h4></li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#非参数化装饰器用作类的通用模式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DecoratorAsClass</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, function)</span>:</span></span><br><span class="line">        self.function = function</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="comment">#do something before call the function</span></span><br><span class="line">        result = self.function(*args, **kwargs)</span><br><span class="line">        <span class="comment">#do something after call the function</span></span><br><span class="line">        <span class="comment">#return result</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><h4 id="参数化装饰器"><a href="#参数化装饰器" class="headerlink" title="参数化装饰器"></a>参数化装饰器</h4></li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#参数化装饰器需要用两层包装</span></span><br><span class="line"><span class="comment">#调用时不管有没有参数都要加括号</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">repeat</span><span class="params">(number=<span class="number">3</span>)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    多次重复执行装饰函数</span></span><br><span class="line"><span class="string">    返回最后一次原始函数调用的值作为结果</span></span><br><span class="line"><span class="string">    ：param number: 重复次数，默认值为3</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">actural_decorator</span><span class="params">(function)</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">            result = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">for</span> _ <span class="keyword">in</span> range(number):</span><br><span class="line">                result = function(*args, **kwargs)</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">return</span> actural_decorator</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><h4 id="保存内省的装饰器"><a href="#保存内省的装饰器" class="headerlink" title="保存内省的装饰器"></a>保存内省的装饰器</h4></li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#函数元数据被覆盖了</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dummy_decorator</span><span class="params">(function)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapped</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        <span class="string">"""包装函数内部文档"""</span></span><br><span class="line">        <span class="keyword">return</span> function(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> wrapped</span><br><span class="line"><span class="meta">@dummy_decorator</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function_with_important_docstring</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""这是我们想要保存的重要文档字符串"""</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;function_with_important_docstring.__name__</span><br><span class="line"><span class="string">"wrapped"</span></span><br><span class="line">&gt;&gt;&gt;function_with_important_decstring.__doc__</span><br><span class="line"><span class="string">"包装函数内部文档"</span></span><br><span class="line"></span><br><span class="line">解决方法：</span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> wraps</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">preserving_decorator</span><span class="params">(function)</span>:</span></span><br><span class="line"><span class="meta">    @wraps(function)</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapped</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        <span class="string">"""包装函数内部文档"""</span></span><br><span class="line">        <span class="keyword">return</span> function(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> wrapped</span><br><span class="line"></span><br><span class="line"><span class="meta">@preserving_decorator</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function_with_important_docstring</span><span class="params">()</span>：</span></span><br><span class="line"><span class="function">    """这是我们想要保存的重要文档字符串"""</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">&gt;&gt;&gt;<span class="title">function_with_important_docstring</span>.<span class="title">__name__</span></span></span><br><span class="line"><span class="function">"<span class="title">function_with_important_docstring</span>"</span></span><br><span class="line"><span class="function">&gt;&gt;&gt;<span class="title">function_with_important_docstring</span>.<span class="title">__doc__</span></span></span><br><span class="line"><span class="function">    """这是我们想要保存的重要文档字符串"""</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="上下文管理器——with语句"><a href="#上下文管理器——with语句" class="headerlink" title="上下文管理器——with语句"></a>上下文管理器——with语句</h3><p>一般语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> context_manager:</span><br><span class="line">    <span class="comment">#代码块</span></span><br><span class="line"><span class="comment">#使用as保存为局部变量</span></span><br><span class="line"><span class="keyword">with</span> context_manager <span class="keyword">as</span> context:</span><br><span class="line">    <span class="comment">#代码块</span></span><br><span class="line"><span class="keyword">with</span> A() <span class="keyword">as</span> a, B() <span class="keyword">as</span> b:</span><br><span class="line">    ...</span><br><span class="line">等价于嵌套使用：</span><br><span class="line"><span class="keyword">with</span> A() <span class="keyword">as</span> a:</span><br><span class="line">    <span class="keyword">with</span> B() <span class="keyword">as</span> b:</span><br><span class="line">        ...</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>作为一个类</li>
-</ol>
-<p>任何实现了上下文管理协议（context manager protocol）的对象都可以用作上下文管理器，该协议包含两个特殊的方法：</p>
-<p>_<em>enter_</em>(self)</p>
-<p>_<em>exit_</em>(self, exc_type, exc_value, traceback)</p>
-<p>with调用过程：</p>
-<ol>
-<li>调用__enter__方法。任何返回值都会绑定到指定的as语句</li>
-<li>执行内部代码块</li>
-<li>调用__exit__方法</li>
-</ol>
-<p>__exit__接受代码块中出现错误时填入的3个参数。如果没有错误，参数都设置为None。出现错误时，__exit__不应该重新引发这个错误，因为这事调用者（caller）的责任。但它可以通过返回True来避免引发异常。类似于finally子句的行为。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ContextIllustration</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__enter__</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"entering context"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__exit__</span><span class="params">(self, exc_type exc_value, traceback)</span>:</span></span><br><span class="line">        print(<span class="string">"leaving context"</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> exc_type <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            print(<span class="string">"with no error"</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">"with an error (%s)"</span> % exc_value)</span><br><span class="line"> </span><br><span class="line">&gt;&gt;&gt;<span class="keyword">with</span> ContextIllustration():</span><br><span class="line">       print(<span class="string">"inside"</span>)</span><br><span class="line">        </span><br><span class="line">entering context</span><br><span class="line">inside</span><br><span class="line">leaving context</span><br><span class="line"><span class="keyword">with</span> no error</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>作为一个函数——contextlib模块</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> contextlib <span class="keyword">import</span> contextmanager</span><br><span class="line"></span><br><span class="line"><span class="meta">@contextmanager</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">context_illustration</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"entering context"</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">yield</span></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(<span class="string">"leaving context"</span>)</span><br><span class="line">        print(<span class="string">"with an error (%s)"</span> % e)</span><br><span class="line">        <span class="comment">#需要再次抛出异常</span></span><br><span class="line">        <span class="keyword">raise</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"leaving context"</span>)</span><br><span class="line">        print(<span class="string">"with no error"</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="for…else…语句"><a href="#for…else…语句" class="headerlink" title="for…else…语句"></a>for…else…语句</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"nobreak"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>            (直接跳出循环没有输出)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"break"</span>)</span><br><span class="line">&gt;&gt;&gt;<span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="函数注解"><a href="#函数注解" class="headerlink" title="函数注解"></a>函数注解</h3><p>函数注解时关于用户自定义函数的类型的完全可选的元信息。//leetcode 有相关使用</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(ham: str, eggs: str = <span class="string">"eggs"</span>)</span> -&gt; str:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;print(f.__annotations__)</span><br><span class="line">&#123;"return":&lt;class "str"&gt;, "eggs":&lt;class "str"&gt;, "ham":&lt;class "str"&gt;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>参数注解为冒号后计算注解值的表达式。返回值注解为函数名结尾冒号与参数列表之后的-&gt;之间的表达式。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/08/python%E5%9F%BA%E7%A1%80/" data-id="ck2qb3m4g00017kvt1agldq0u" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
